@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <meta name="description" content="A study recreation — 30 case-study projects grouped by category, with full details and images." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#/" class="brand" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <span class="brand-mark">◈</span>
+        <span class="brand-name">My <strong>Portfolio</strong></span>
+      </a>
+      <nav class="top-nav">
+        <a href="#/" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" data-i18n="navWork">Work Histories</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <div id="lang-switch" class="lang-switch"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero--image">
+    <div class="wrap hero-inner">
+      <div class="hero-stack" id="hero-stack" aria-hidden="true"><!-- stacked cards injected --></div>
+      <div class="hero-media">
+        <img src="images-bo/photo.png" alt="" onerror="this.closest('.hero-media').style.display='none'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section title -->
+  <div class="wrap section-title">
+    <h2><span data-i18n="workTitleA">Work </span><span class="accent" data-i18n="workTitleB">Histories</span></h2>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls-bar">
+    <div class="wrap">
+      <div class="filters" id="filters"><!-- category chips injected --></div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <main class="wrap">
+    <div id="sections"><!-- category sections injected --></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p style="text-align:center;margin:0">@2025-05-06 <span style="color:var(--pink)">Taichi Ninomiya</span></p>
+    </div>
+  </footer>
+
+  <!-- Detail modal -->
+  <div class="modal-overlay" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body" id="modal-body"><!-- detail injected --></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="details.js"></script>
+  <script src="images.js"></script>
+  <script src="i18n.js"></script>
+  <script src="translations.i18n.js"></script>
+  <script src="lang.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

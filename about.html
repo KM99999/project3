@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Introduction</title>
+  <meta name="description" content="My Introduction — about me, skills, and background." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">◈</span>
+        <span class="brand-name">My <strong>Portfolio</strong></span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html" data-i18n="navWork">Work Histories</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <div id="lang-switch" class="lang-switch"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro hero -->
+  <section class="intro">
+    <div class="wrap intro-inner">
+      <div class="intro-text">
+        <p class="eyebrow" data-i18n="eyebrow">My Introduction</p>
+        <h1><span class="accent" data-i18n="h1">Full-Stack &amp; Mobile Developer</span></h1>
+        <p class="intro-role" data-i18n="role">Turning ideas into scalable, secure, high-performance software.</p>
+        <p class="bio" data-i18n="bio">Hello! I'm a Full-Stack and Mobile Developer specializing in transforming ideas into scalable, secure, and high-performance digital solutions. Beyond writing code, my primary focus is understanding each client's business goals and building software that delivers real value and measurable results.</p>
+        <div class="intro-actions">
+          <a class="btn btn-primary" href="index.html" data-i18n="viewwork">View my work</a>
+        </div>
+      </div>
+      <div class="intro-photo">
+        <img src="images-bo/photo.png" alt="Portrait" onerror="this.closest('.intro-photo').style.display='none'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About body -->
+  <main class="wrap about-body">
+    <div class="about-grid">
+      <div class="about-block">
+        <h2 data-i18n="aboutH2">About me</h2>
+        <p data-i18n="p1" data-i18n-html>I have experience developing <strong>web applications, Android and iOS mobile apps, SaaS platforms, enterprise systems, e-commerce solutions, API integrations, and business process automation</strong>. My core technology stack includes <strong>Node.js, React.js, Next.js, TypeScript, PHP, Python, Flutter, MySQL, AWS, and WordPress</strong>, with a strong emphasis on clean code, scalable architecture, and long-term maintainability.</p>
+        <p data-i18n="p2" data-i18n-html>In addition to traditional software development, I have worked with <strong>CRM integrations (Bitrix24 and Zoho CRM), Twilio, SharePoint, Shopify, Wix, AppSheet, Bubble, IoT, Arduino, embedded systems, Unity, Machine Learning, and custom software solutions</strong> across a variety of industries.</p>
+        <p data-i18n="p3">What sets me apart is my ability to combine technical expertise with a business-oriented mindset. Before writing a single line of code, I analyze business processes to identify opportunities for optimization, reduce operational costs, improve productivity, and build systems that can grow alongside the business.</p>
+
+        <h3 data-i18n="expectH3">What you can expect when working with me</h3>
+        <ul>
+          <li data-i18n="e1">Custom software development tailored to your business needs</li>
+          <li data-i18n="e2">Clean, well-structured, and maintainable code</li>
+          <li data-i18n="e3">Modern, responsive, and user-friendly interfaces</li>
+          <li data-i18n="e4">Robust API development and third-party integrations</li>
+          <li data-i18n="e5">Fast, secure, and scalable applications</li>
+          <li data-i18n="e6">Clear and transparent communication throughout the project</li>
+          <li data-i18n="e7">Strong commitment to quality, reliability, and on-time delivery</li>
+        </ul>
+
+        <p data-i18n="closing">I believe great software is more than just functional—it should solve real business problems and create lasting value. If you're looking for a developer who takes ownership, contributes to technical decisions, and delivers production-ready solutions, I'd be excited to help bring your project to life.</p>
+      </div>
+
+      <aside class="about-block">
+        <h2 data-i18n="coreStack">Core stack</h2>
+        <div class="skill-tags">
+          <span>Node.js</span>
+          <span>React.js</span>
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>PHP</span>
+          <span>Python</span>
+          <span>Flutter</span>
+          <span>MySQL</span>
+          <span>AWS</span>
+          <span>WordPress</span>
+        </div>
+
+        <h3 data-i18n="alsoWork">Also work with</h3>
+        <div class="skill-tags">
+          <span>Bitrix24</span>
+          <span>Zoho CRM</span>
+          <span>Twilio</span>
+          <span>SharePoint</span>
+          <span>Shopify</span>
+          <span>Wix</span>
+          <span>AppSheet</span>
+          <span>Bubble</span>
+          <span>Unity</span>
+          <span>Machine Learning</span>
+          <span>IoT / Arduino</span>
+        </div>
+
+        <h3 data-i18n="expTitle">Experience</h3>
+        <p class="exp-body" data-i18n="expBody">Led the design and development of enterprise web and mobile applications while serving as one of the key technical members of the engineering team. Promoted to take responsibility for major client projects, system architecture decisions, and mentoring junior developers. Designed and developed scalable SaaS platforms, e-commerce systems, business management applications, RESTful APIs, and cross-platform mobile applications using Node.js, React.js, Next.js, TypeScript, PHP, Python, Flutter, MySQL, AWS, and WordPress. Successfully delivered numerous projects across various industries by collaborating closely with clients, business analysts, designers, and QA engineers. Responsible for technical planning, code reviews, performance optimization, security improvements, cloud deployment, third-party API integrations, and database architecture.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p style="text-align:center">My Portfolio — introduction page. <a href="index.html" style="color:var(--pink);font-weight:600" data-i18n="backLink">Back to Work Histories</a></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="translations.i18n.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>
