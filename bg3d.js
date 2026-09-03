@@ -61,9 +61,9 @@
   // Separate layers because PointsMaterial carries a single size; the depth
   // split also lets each band carry its own opacity.
   var LAYERS = [
-    { count: 300, size: 0.70, opacity: 0.34, zNear: -45, zFar: -95, spread: 105 },
-    { count: 150, size: 1.35, opacity: 0.30, zNear: -14, zFar: -45, spread: 78 },
-    { count: 22,  size: 3.20, opacity: 0.13, zNear: 10,  zFar: -14, spread: 58 }
+    { count: 440, size: 1.95, opacity: 0.82, zNear: -45, zFar: -95, spread: 105 },
+    { count: 250, size: 3.30, opacity: 0.68, zNear: -14, zFar: -45, spread: 78 },
+    { count: 30,  size: 6.00, opacity: 0.22, zNear: 10,  zFar: -14, spread: 58 }
   ];
 
   LAYERS.forEach(function (L) {
@@ -144,17 +144,17 @@
     raf = requestAnimationFrame(frame);
 
     // Critically-damped-ish follow: snappy but never jittery.
-    ease.x += (target.x - ease.x) * 0.045;
-    ease.y += (target.y - ease.y) * 0.045;
+    ease.x += (target.x - ease.x) * 0.06;
+    ease.y += (target.y - ease.y) * 0.06;
 
     // Camera translation is what produces genuine differential parallax.
-    camera.position.x = ease.x * 9;
-    camera.position.y = -ease.y * 6;
+    camera.position.x = ease.x * 20;
+    camera.position.y = -ease.y * 13;
     camera.lookAt(0, 0, 0);
 
     // A small counter-tilt on the field exaggerates the depth read.
-    field.rotation.y = ease.x * 0.07;
-    field.rotation.x = -ease.y * 0.055;
+    field.rotation.y = ease.x * 0.16;
+    field.rotation.x = -ease.y * 0.13;
 
     // Ambient drift, so it breathes with the pointer parked.
     field.rotation.z += 0.00035;
